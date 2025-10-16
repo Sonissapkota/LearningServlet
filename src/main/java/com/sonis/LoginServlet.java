@@ -18,7 +18,8 @@ public class LoginServlet extends HttpServlet {
         PrintWriter out = res.getWriter();
 
         if(username.equals("sonis@gmail.com") && password.equals("sonis")){
-            RequestDispatcher rd = req.getRequestDispatcher("/profile.html");
+            req.setAttribute("user_key", username);
+            RequestDispatcher rd = req.getRequestDispatcher("/profile.jsp");
             rd.forward(req,res);
         }else{
             res.setContentType("text/html");
