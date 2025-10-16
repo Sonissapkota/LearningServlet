@@ -4,7 +4,7 @@
 </head>
 <body>
 <%
-String myname = (String) request.getAttribute("user_key");
+String myname = (String) session.getAttribute("user_key");
 %>
 <h1>Welcome to profile page:<%= myname %></h1>
 
