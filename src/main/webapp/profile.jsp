@@ -9,6 +9,7 @@ String myname = (String) session.getAttribute("user_key");
 <h1>Welcome to profile page:<%= myname %></h1>
 
 <a href="about.jsp">About us</a><br>
-<a href="privacy.jsp">Privacy Policy</a>
+<a href="privacy.jsp">Privacy Policy</a><br>
+<a href="logout">Logout</a>
 </body>
 </html>
